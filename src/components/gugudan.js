@@ -13,12 +13,23 @@ class Gugudan extends Component {
     onSubmit = e => {
         e.preventDefault();
         if(parseInt(this.state.value) === this.state.first * this.state.second) {
+<<<<<<< HEAD:src/components/study.js
             this.setState((prevState) => ({
                 result: '정답' + prevState.value,
                 first: Math.ceil(Math.random() * 9),
                 second: Math.ceil(Math.random() * 9),
                 value: ''
             }))
+=======
+          this.setState((prevState) => 
+            ({
+              result: '정답' + prevState.value,
+              first: Math.ceil(Math.random() * 9),
+              second: Math.ceil(Math.random() * 9),
+              value: ''
+            })
+          )
+>>>>>>> 4080d80ba5a95720a748017dd44860a673a4682d:src/components/gugudan.js
         }else {
             this.setState({
                 result: '땡',
