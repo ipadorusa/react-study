@@ -13,12 +13,12 @@ class Gugudan extends Component {
     onSubmit = e => {
         e.preventDefault();
         if(parseInt(this.state.value) === this.state.first * this.state.second) {
-            this.setState({
-                result: '정답',
+            this.setState((prevState) => ({
+                result: '정답' + prevState.value,
                 first: Math.ceil(Math.random() * 9),
                 second: Math.ceil(Math.random() * 9),
                 value: ''
-            })
+            }))
         }else {
             this.setState({
                 result: '땡',
