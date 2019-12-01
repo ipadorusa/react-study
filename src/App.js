@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Gugudan from './components/gugudan';
+import Gugudan2 from './components/gugudanHooks';
+import NumberBaseball from './components/baseball';
 import './App.css';
 
 const list = [
@@ -53,6 +55,8 @@ class App extends Component {
         )}
         </ul>
         <Gugudan/>
+        <Gugudan2/>
+        <NumberBaseball />
       </div>
     );
   }
