@@ -4,11 +4,8 @@ class Try extends Component {
   render() {
     return (
       <li>
-        <b>{this.props.value.fruit}</b><span>{this.props.idx}</span>
-        <div>content1</div>
-        <div>content2</div>
-        <div>content3</div>
-        <div>content4</div>
+        <div>{this.props.tryInfo.try}</div>
+        <div>{this.props.tryInfo.result}</div>
       </li>
     );
   };
